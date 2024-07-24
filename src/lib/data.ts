@@ -69,14 +69,14 @@ const hackathons = [
     name: "AudioCraft Hackathon",
     desc: "3rd Position",
     image: "/music.jpg.webp",
-    desig: "Created AI assistant for Music Generation guaging User Moods",
+    desig: "Created an application that effortlessly gauges user’s mood through their webcam feed and curates an ideal musical experience.",
   },
   {
     id: 3,
     name: "StableCode Hackathon",
     desc: '3rd Position',
     image: "/scrape.png",
-    desig: "Create AI assistant for Websites Scraping and generated for parsing",
+    desig: "Created an app thats crape websites by Stablecode generate JavaScript code to parse a part of the HTML and convert it to a CSV",
   },
   {
     id: 4,
