@@ -3,7 +3,7 @@ import Image from "next/image";
 import CaraouselBig from "./Caraousel";
 export default function Pic() {
   return (
-    <div className="flex w-full h-[500px]">
+    <div className="flex w-full h-[500px] mb-10">
       <div className="w-1/2 ">
         <div className="w-full h-1/4 p-10 text-5xl text-green-800">
           Hackathons
