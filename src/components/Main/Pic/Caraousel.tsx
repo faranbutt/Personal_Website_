@@ -30,7 +30,8 @@ export default function CaraouselBig() {
                         </CardHeader>
                         <CardContent>
                             <p>{data.desig}</p>
-                            <Image src={'/skills.png'} alt="skilss" width={100} height={100}/>
+                            {data.name == 'AudioCraft Hackathon' ? ( <Image src={data.image} alt="skilss" width={260} height={240}/>) : ( <Image src={data.image} alt="skilss" width={150} height={150}/>)}
+                           
                         </CardContent>
                     </Card>
                 </div>
