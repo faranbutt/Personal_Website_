@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto_Mono as FontSans } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
+const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,44 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}
+      >
+        <nav className="flex p-10 w-screen h-20 bg-purple-50">
+          <div className="w-full h-full flex justify-between items-center">
+            <div className="flex gap-5 justify-center items-center">
+              <div>
+                <Image src={"/logo.svg"} alt="logo" width={30} height={30} />
+              </div>
+              <div>
+                Faran.<span className="text-green-800">dev</span>
+              </div>
+            </div>
+            <div className="flex gap-6">
+              <Link href={"#projects"} className="hover:text-green-800">
+                Experience
+              </Link>
+              <Link href={"#projects"} className="hover:text-green-800">
+                Projects
+              </Link>
+              <Link href={"#projects"} className="hover:text-green-800">
+                Recommendations
+              </Link>
+            </div>
+            <div>
+              <Link href={"#projects"} className="">
+                <Button className="bg-white border-2 border-green-800 text-green-800 hover:bg-green-800 hover:text-white">
+                  Resume
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
