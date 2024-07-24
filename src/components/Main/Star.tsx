@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function () {
+export default function Star() {
   return (
     <div>
          <svg className="text-green-500 ms-1 w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
