@@ -12,7 +12,7 @@ Welcome to my personal website! This project is part of my Software Engineering 
 
 ## 📸 Preview
 
-![Website Screenshot](https://faranbuttt.vercel.app)
+![Website Screenshot](https://github.com/faranbutt/Personal_Website_/blob/main/public/res.png)
 
 ## ✨ Features
 
