@@ -55,7 +55,7 @@ export default function Timelinee() {
           <h2 className="vertical-timeline-element-title text-white ">Embedded Software Engineer</h2>
           <h4 className="vertical-timeline-element-subtitle">Technosol Private Limited , PK</h4>
           <p>
-          React Native, React, C, Web and Mobile App Design, RestfulAPI's
+          React Native, React, C, Web and Mobile App Design, RestfulAPI
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
