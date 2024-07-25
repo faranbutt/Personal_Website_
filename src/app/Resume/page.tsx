@@ -9,7 +9,7 @@ export default function Resume() {
       <div className="flex items-center justify-center">
         <Link
           href={
-            "https://github.com/faranbutt/Personal_Website_/blob/main/public/Faran_s_Resume-2.pdf"
+            "/Faran_s_Resume-2.pdf"
           }
           title=""
           download={true}

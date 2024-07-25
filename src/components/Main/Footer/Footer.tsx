@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 import { FaLinkedin,FaGithub, FaDiscord } from 'react-icons/fa'
 import { GoProjectSymlink } from "react-icons/go";
+
 export default function Footer() {
   return (
     <div className='mt-20 w-full h-32 bg-green-200 border-t-2 border-green-600 rounded-t-xl'>
@@ -13,10 +15,10 @@ export default function Footer() {
                 <div>Faran<span className='text-green-700'>.dev</span> </div>
             </div>
             <div className='w-1/2 flex justify-end items-center pr-6 gap-2'>
-                    <FaLinkedin className='w-10 h-10 text-white bg-blue-500 rounded-full p-1.5 hover:bg-green-300' />
-                    <FaGithub className='w-10 h-10 text-white bg-[#0D1117] hover:bg-green-300 rounded-full p-1' />
-                    <FaDiscord className='w-10 h-10 text-white bg-[#909bfa] hover:bg-green-300 rounded-full p-1' />
-                    <GoProjectSymlink className='w-10 h-10 text-white bg-pink-300 hover:bg-green-300 rounded-full p-1' />
+                    <Link href={'https://www.linkedin.com/in/faranbutt/'}><FaLinkedin className='w-10 h-10 text-white bg-blue-500 rounded-full p-1.5 hover:bg-green-300' /></Link>
+                    <Link href={'https://github.com/faranbutt'}><FaGithub className='w-10 h-10 text-white bg-[#0D1117] hover:bg-green-300 rounded-full p-1' /></Link>
+                    <Link href={'https://discord.com/users/718862408050802699'}><FaDiscord className='w-10 h-10 text-white bg-[#909bfa] hover:bg-green-300 rounded-full p-1' /></Link>
+                    <Link href={'https://faranbutt.vercel.app'}><GoProjectSymlink className='w-10 h-10 text-white bg-pink-300 hover:bg-green-300 rounded-full p-1' /></Link>
             </div>
         </div>
         <div className='flex w-full h-1/2 '>
