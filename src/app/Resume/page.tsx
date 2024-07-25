@@ -11,7 +11,8 @@ export default function Resume() {
           href={
             "https://github.com/faranbutt/Personal_Website_/blob/main/public/Faran_s_Resume-2.pdf"
           }
-          title="download"
+          title=""
+          download={true}
         >
           <Button className="bg-green-400">Download Resume</Button>
         </Link>
