@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/Main/Footer/Footer";
 
+
 const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
@@ -41,18 +42,18 @@ export default function RootLayout({
               </div>
             </div>
             <div className="flex gap-6">
-              <Link href={"#projects"} className="hover:text-green-800">
+              <Link href={"#Expereince"} className="hover:text-green-800">
                 Experience
               </Link>
               <Link href={"#projects"} className="hover:text-green-800">
                 Projects
               </Link>
-              <Link href={"#projects"} className="hover:text-green-800">
+              <Link href={"#Reviews"} className="hover:text-green-800">
                 Recommendations
               </Link>
             </div>
             <div>
-              <Link href={"#projects"} className="">
+              <Link href={"https://www.overleaf.com/read/swvxktqkkmsf#3e7cb8"} className="" target="_blank">
                 <Button className="bg-white border-2 border-green-800 text-green-800 hover:bg-green-800 hover:text-white">
                   Resume
                 </Button>
