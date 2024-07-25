@@ -43,7 +43,7 @@ export function SheetSide() {
             <SheetHeader>
               <SheetTitle className="text-xl font-bold text-green-700">Edit profile</SheetTitle>
               <SheetDescription className="text-green-600">
-                Make changes to your profile here. Click save when you're done.
+                Make changes to your profile here. Click save when you are done.
               </SheetDescription>
             </SheetHeader>
             <div className="grid gap-4 py-4">
