@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Skills() {
   return (
-    <div className="w-full flex h-[500px] ">
+    <div className="w-full flex h-[500px] bg-green-100 ">
       <div className="w-1/2  flex justify-center items-center">
         <div>
           <Image src={"/skills2.png"} alt="computer" width={500} height={500} />
@@ -15,7 +15,7 @@ export default function Skills() {
         </div>
         <div className="h-2/3  grid grid-cols-4">
           <div className="flex items-center justify-center">
-            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200">
+            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200 border-4 border-white shadow-lg shadow-green-600">
               <Image
                 src={"/nextjs.png"}
                 alt="nextjs"
@@ -25,7 +25,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200">
+            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200 border-4 border-white shadow-lg shadow-green-600">
               <Image
                 src={"/langchain.png"}
                 alt="nextjs"
@@ -35,7 +35,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200">
+            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200 border-4 border-white shadow-lg shadow-green-600">
               <Image
                 src={"/python.png"}
                 alt="nextjs"
@@ -45,12 +45,12 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200">
+            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200 border-4 border-white shadow-lg shadow-green-600">
               <Image src={"/aws.webp"} alt="nextjs" width={100} height={100} />
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200">
+            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200 border-4 border-white shadow-lg shadow-green-600">
               <Image
                 src={"/fastapi.webp"}
                 alt="nextjs"
@@ -60,7 +60,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200">
+            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200 border-4 border-white shadow-lg shadow-green-600">
               <Image
                 src={"/nodejs.png"}
                 alt="nextjs"
@@ -70,7 +70,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200">
+            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200 border-4 border-white shadow-lg shadow-green-600">
               <Image
                 src={"/docker.png"}
                 alt="nextjs"
@@ -80,7 +80,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200">
+            <div className="flex items-center justify-center w-32 h-32 rounded-full bg-green-200 border-4 border-white shadow-lg shadow-green-600">
               <Image
                 src={"/pytorch.png"}
                 alt="nextjs"

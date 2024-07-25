@@ -9,6 +9,7 @@ import {
   Contact,
 } from "@/components/Main/exporter";
 
+
 export default function Home() {
   return (
     <main>
@@ -19,6 +20,7 @@ export default function Home() {
       <Pic />
       <Reviews />
       <Contact />
+
     </main>
   );
 }
