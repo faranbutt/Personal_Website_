@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import { Input } from "@/components/ui/input";
@@ -12,8 +13,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
+import { useToast } from "@/components/ui/use-toast";
+import { title } from "process";
+
 
 export default function Contact() {
+  const {toast} = useToast();
+
   return (
     <div className="w-full h-[500px] ">
       <div className="">
@@ -60,7 +66,12 @@ export default function Contact() {
               </div>
             </div>
             <div className="h-2/3 w-full flex justify-center items-center">
-                  <Button className="bg-green-400">Submit</Button>
+                  <Button className="bg-green-400" onClick={() => {toast({
+          title: "Information Submitted",
+          description: "Owner will contact you in 24 Hours",
+          className: "bg-green-400 text-white"
+        })
+      }} >Submit</Button>
             </div>
           </div>
         </div>

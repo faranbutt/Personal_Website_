@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Star from './Star'
 import { Button } from '../ui/button'
+import { SheetSide } from './Header/ContactForm'
 export default function Header() {
   return (
     <div className='w-full h-[500px] bg-green-100 flex'>
@@ -10,7 +11,7 @@ export default function Header() {
               <div>Hey I am Faran</div>
               <div className='text-4xl bold'>I create <span className='bolder text-7xl text-green-800'>AI Solutions</span> for medium to large scale enterprises</div>
               <div className='pt-4'>
-              <Button className='bg-green-400'>Get in Touch</Button>
+              <SheetSide />
               </div>
             </div>
         </div>
