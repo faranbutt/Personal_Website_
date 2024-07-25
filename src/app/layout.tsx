@@ -32,6 +32,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <div className="w-screen h-screen flex flex-col">
           <nav className="flex p-10 w-screen h-20">
             <div className="w-full h-full flex justify-between items-center">
               <div className="flex gap-5 justify-center items-center">
@@ -43,6 +44,9 @@ export default function RootLayout({
                 </div>
               </div>
               <div className="flex gap-6">
+                <Link href={"/"} className="hover:text-green-800">
+                  Home
+                </Link>
                 <Link href={"#Expereince"} className="hover:text-green-800">
                   Experience
                 </Link>
@@ -55,9 +59,8 @@ export default function RootLayout({
               </div>
               <div>
                 <Link
-                  href={"https://www.overleaf.com/read/swvxktqkkmsf#3e7cb8"}
+                  href={"/Resume"}
                   className=""
-                  target="_blank"
                 >
                   <Button className="bg-white border-2 border-green-800 text-green-800 hover:bg-green-800 hover:text-white">
                     Resume
@@ -68,7 +71,10 @@ export default function RootLayout({
           </nav>
           {children}
           <Toaster />
-          <Footer />
+          <div className="flex h-full w-full justify-end items-end mt-10">
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );
