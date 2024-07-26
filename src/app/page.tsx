@@ -13,13 +13,13 @@ import {
 export default function Home() {
   return (
     <main>
-      <Header />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Pic />
-      <Reviews />
-      <Contact />
+      <div><Header /></div>
+      <div id="expereince"><Experience /></div>
+      <div><Skills /></div>
+      <div id="projects"><Projects /></div>
+      <div id="ack"><Pic /></div>
+      <div id='reviews'><Reviews /></div>
+      <div><Contact /></div>
 
     </main>
   );

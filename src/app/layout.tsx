@@ -32,43 +32,46 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <div className="w-screen h-screen flex flex-col">
-          <nav className="flex p-10 w-screen h-20">
-            <div className="w-full h-full flex justify-between items-center">
-              <div className="flex gap-5 justify-center items-center">
-                <div>
-                  <Image src={"/logo.svg"} alt="logo" width={30} height={30} />
-                </div>
-                <div>
-                  Faran.<span className="text-green-800">dev</span>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <Link href={"/"} className="hover:text-green-800">
-                  Home
-                </Link>
-                <Link href={"#Expereince"} className="hover:text-green-800">
-                  Experience
-                </Link>
-                <Link href={"#projects"} className="hover:text-green-800">
-                  Projects
-                </Link>
-                <Link href={"#Reviews"} className="hover:text-green-800">
-                  Recommendations
-                </Link>
+        <nav className="fixed top-0 left-0 right-0 flex p-10 w-full h-20 bg-white shadow-md z-50">
+          <div className="w-full h-full flex justify-between items-center">
+            <div className="flex gap-5 justify-center items-center">
+              <div>
+                <Image src={"/logo.svg"} alt="logo" width={30} height={30} />
               </div>
               <div>
-                <Link
-                  href={"/Resume"}
-                  className=""
-                >
-                  <Button className="bg-white border-2 border-green-800 text-green-800 hover:bg-green-800 hover:text-white">
-                    Resume
-                  </Button>
-                </Link>
+                Faran.<span className="text-green-800">dev</span>
               </div>
             </div>
-          </nav>
+            <div className="flex gap-6">
+              <Link href={"/"} className="hover:text-green-800">
+                Home
+              </Link>
+              <Link href={"#expereince"} className="hover:text-green-800">
+                Experience
+              </Link>
+              <Link href={"#projects"} className="hover:text-green-800">
+                Projects
+              </Link>
+              <Link href={"#hack"} className="hover:text-green-800">
+                Hackathons
+              </Link>
+              <Link href={"#reviews"} className="hover:text-green-800">
+                Recommendations
+              </Link>
+            </div>
+            <div>
+              <Link
+                href={"/Resume"}
+                className=""
+              >
+                <Button className="bg-white border-2 border-green-800 text-green-800 hover:bg-green-800 hover:text-white">
+                  Resume
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </nav>
+        <div className="pt-20 w-screen h-screen flex flex-col">
           {children}
           <Toaster />
           <div className="flex h-full w-full justify-end items-end mt-10">
