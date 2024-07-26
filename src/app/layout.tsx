@@ -74,9 +74,7 @@ export default function RootLayout({
         <div className="pt-20 w-screen h-screen flex flex-col">
           {children}
           <Toaster />
-          <div className="flex h-full w-full justify-end items-end mt-10">
-            <Footer />
-          </div>
+         
         </div>
       </body>
     </html>

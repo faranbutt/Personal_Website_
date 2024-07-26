@@ -8,6 +8,7 @@ import {
   Pic,
   Contact,
 } from "@/components/Main/exporter";
+import Footer from "@/components/Main/Footer/Footer";
 
 
 export default function Home() {
@@ -20,6 +21,9 @@ export default function Home() {
       <div id="ack"><Pic /></div>
       <div id='reviews'><Reviews /></div>
       <div><Contact /></div>
+      <div className="flex justify-end mt-10">
+            <Footer />
+          </div>
 
     </main>
   );
