@@ -41,9 +41,9 @@ export function SheetSide() {
           </SheetTrigger>
           <SheetContent side={side} className="bg-green-50 shadow-lg rounded-lg p-6">
             <SheetHeader>
-              <SheetTitle className="text-xl font-bold text-green-700">Edit profile</SheetTitle>
+              <SheetTitle className="text-xl font-bold text-green-700">Contact us</SheetTitle>
               <SheetDescription className="text-green-600">
-                Make changes to your profile here. Click save when you are done.
+                Contact us for best business deals and get notified in 24 hours 🕓.
               </SheetDescription>
             </SheetHeader>
             <div className="grid gap-4 py-4">
