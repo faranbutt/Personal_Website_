@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { hackathons } from "@/lib/data";
 import Image from "next/image";
+import Link from "next/link";
 interface hack {
     id: number;
     name: string;
@@ -21,8 +22,10 @@ export default function CaraouselBig() {
         <Carousel className="w-full max-w-xs bg-green-300 rounded-xl">
           <CarouselContent className="rounded-xl">
             {hackathons.map((data, index) => (
+              
               <CarouselItem key={index} >
                 <div className="p-1">
+                <Link href={data.urll} key={index} target="_blank">
                     <Card>
                         <CardHeader>
                             <CardTitle>{data.name}</CardTitle>
@@ -34,8 +37,10 @@ export default function CaraouselBig() {
                            
                         </CardContent>
                     </Card>
+                 </Link>
                 </div>
               </CarouselItem>
+              
             ))}
           </CarouselContent>
           <CarouselPrevious />

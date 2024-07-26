@@ -9,7 +9,7 @@ export default function Projects() {
             {
                 projects.map(data=>(
                     <div className='' key={data.id}>
-                        <Cards name={data.name} image={data.image} desc={data.desc} />
+                        <Cards name={data.name} image={data.image} desc={data.desc} urll={data.urll} />
                     </div>
                 ))
             }
