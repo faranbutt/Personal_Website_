@@ -7,7 +7,7 @@ export default function Resume() {
   return (
     <div className="w-full h-full">
       <div className="w-full pl-10 text-5xl text-green-800">Resume</div>
-      <div className="flex items-center justify-center py-10">
+      <div className="flex items-center justify-center py-20">
         <Link
           href={
             "/Faran_s_Resume-2.pdf"
